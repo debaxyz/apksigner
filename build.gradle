@@ -3,7 +3,7 @@
 buildscript {
     repositories {
         jcenter()
-		google()
+		//google()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -17,9 +17,12 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+      //  jcenter()
 		google()
         mavenCentral()
         gradlePluginPortal()
     }
+}
+task clean(type: Delete) {
+  delete rootProject.buildDir
 }
